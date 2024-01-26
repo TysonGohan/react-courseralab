@@ -13,6 +13,15 @@
   }
 }
 
+.card {
+  margin: 20px;
+  max-width: 300px;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
