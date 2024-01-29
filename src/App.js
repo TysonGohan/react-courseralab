@@ -11,6 +11,7 @@ import FruitsApp from "./FruitsApp";
 import { HomePage } from "./HomePage";
 import { AboutMe } from "./AboutMe";
 import { Routes, Route, Link } from "react-router-dom";
+import { ShowImage } from "./ShowImage";
 
 function App() {
   function randomGen() {
@@ -37,10 +38,12 @@ function App() {
       <div>
         <nav>
           <Link to="/home">Home</Link>
+          <Link to="/Image">Images</Link>
           <Link to="/about">About</Link>
         </nav>
         <Routes>
           <Route path="/home" element={<HomePage />} />
+          <Route path="/Image" element={<ShowImage />} />
           <Route path="/about" element={<AboutMe />} />
         </Routes>
       </div>
