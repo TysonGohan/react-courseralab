@@ -1,4 +1,4 @@
-import { useFruitsContext } from "./FruitsApp";
+import { useFruitsContext } from "../FruitsApp";
 
 function Fruits() {
   const { fruits } = useFruitsContext();

@@ -1,4 +1,4 @@
-import goku from "./assets/goku.jpg";
+import goku from "../../assets/goku.jpg";
 
 const ShowImage = () => {
   const imageUrl =
@@ -11,7 +11,7 @@ const ShowImage = () => {
       <img src={goku} alt="This is goku direclt from assets" />
       <h3> From assets as require</h3>
       <img
-        src={require("./assets/goku.jpg")}
+        src={require("../../assets/goku.jpg")}
         alt="This is goku direclt from assets"
       />
       <h3> From url</h3>

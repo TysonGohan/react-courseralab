@@ -1,4 +1,4 @@
-import nallEn from "./assets/Naal En Seiyum.mp3";
+import nallEn from "../../assets/Naal En Seiyum.mp3";
 
 const ShowAudio = () => {
   const birdAudio = new Audio(

@@ -1,5 +1,5 @@
-import Fruits from "./Fruits";
-import FruitsCounter from "./FruitsCounter";
+import Fruits from "./Components/Fruits";
+import FruitsCounter from "./Components/FruitsCounter";
 import { useContext } from "react";
 import React from "react";
 

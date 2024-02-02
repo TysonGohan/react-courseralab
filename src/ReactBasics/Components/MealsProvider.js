@@ -2,8 +2,6 @@ import React from "react";
 
 const MealsContext = React.createContext();
 
-const todaysMeals = ["Poori", "Chola Poori", "Chilly Parotta"];
-
 const meals = [
   { name: "Carrot", calories: "100", id: "1" },
   { name: "Beans", calories: "200", id: "2" },
