@@ -14,8 +14,8 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={ <HomePage/>}/>
-          <Route path="/*" element={ <ReactBasicsHome/> }/>
-          <Route path="/advanced" element={ <AdvanceReactHome/> }/>
+          <Route path="/basics/*" element={ <ReactBasicsHome/> }/>
+          <Route path="/advanced/*" element={ <AdvanceReactHome/> }/>
         </Routes>
     </div>
   );

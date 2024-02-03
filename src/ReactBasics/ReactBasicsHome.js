@@ -15,18 +15,19 @@ const ReactBasicsHome = () =>
 {
   return (
     <div>
+      <h2> Basic React Topics </h2>
       <nav>
-        <Link to="/fe">Function Expression</Link>
-        <Link to="/useState">Use State</Link>
-        <Link to="/useRef">Use Ref</Link>
-        <Link to="/random">Random Generator</Link>
-        <Link to="/props">Simple Props</Link>
-        <Link to="/provider">Simple Provider</Link>
-        <Link to="/reducer">Simple Reducer</Link>
-        <Link to="/Image">Images</Link>
-        <Link to="/Audio">Audio</Link>
-        <Link to="/Videos">Videos</Link>
-        <Link to="/about">About</Link>
+        <Link to="/basics/fe">Function Expression</Link>
+        <Link to="/basics/useState">Use State</Link>
+        <Link to="/basics/useRef">Use Ref</Link>
+        <Link to="/basics/random">Random Generator</Link>
+        <Link to="/basics/props">Simple Props</Link>
+        <Link to="/basics/provider">Simple Provider</Link>
+        <Link to="/basics/reducer">Simple Reducer</Link>
+        <Link to="/basics/Image">Images</Link>
+        <Link to="/basics/Audio">Audio</Link>
+        <Link to="/basics/Videos">Videos</Link>
+        <Link to="/basics/about">About</Link>
       </nav>
       <Routes>
         <Route path="/fe" element={<FunctionExpression />} />
