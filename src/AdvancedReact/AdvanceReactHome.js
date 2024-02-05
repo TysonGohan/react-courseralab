@@ -7,6 +7,8 @@ import { ThemeProvider } from "./Componenets/ThemeProvider";
 import { CorrectWayToUpdateState } from "./Componenets/CorrectWayToUpdateState";
 import { GiftCardState } from "./Componenets/GiftCardState";
 import { GoalsState } from "./Componenets/GoalsState";
+import { MyUseEffect } from "./Componenets/MyUseEffect";
+
 
 const AdvanceReactHome = () =>
 {
@@ -18,6 +20,7 @@ const AdvanceReactHome = () =>
             <Link to="/advanced/controlledComps">Controlled Componenets</Link>
             <Link to="/advanced/context">Context</Link>
             <Link to="/advanced/updateState">Correct Way to Update Sate</Link>
+            <Link to="/advanced/useEffect">Use Effect or Side Effect</Link>
         </nav>
         <Routes>
             <Route path="/map" element={<Map/>}/>
@@ -25,6 +28,7 @@ const AdvanceReactHome = () =>
             <Route path="/controlledComps" element={<ControlledComps/>}/>
             <Route path="/context" element={ <ThemeProvider> <MyContext/></ThemeProvider>}/>
             <Route path="/updateState" element={ <><CorrectWayToUpdateState/><GiftCardState/><GoalsState/></>}/>
+            <Route path="/useEffect" element={<MyUseEffect/>}/>
         </Routes>
     </>
 }
