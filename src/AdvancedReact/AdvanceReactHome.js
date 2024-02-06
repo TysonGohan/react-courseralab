@@ -9,6 +9,7 @@ import { GiftCardState } from "./Componenets/GiftCardState";
 import { GoalsState } from "./Componenets/GoalsState";
 import { MyUseEffect } from "./Componenets/MyUseEffect";
 import { UseEffectWithFetch } from "./Componenets/UseEffectWithFetch";
+import { UseCustomHooks } from "./Componenets/UseCustomHooks";
 
 
 const AdvanceReactHome = () =>
@@ -22,6 +23,7 @@ const AdvanceReactHome = () =>
             <Link to="/advanced/context">Context</Link>
             <Link to="/advanced/updateState">Correct Way to Update Sate</Link>
             <Link to="/advanced/useEffect">Use Effect or Side Effect</Link>
+            <Link to="/advanced/customHooks">Custom Hooks</Link>
         </nav>
         <Routes>
             <Route path="/map" element={<Map/>}/>
@@ -30,6 +32,7 @@ const AdvanceReactHome = () =>
             <Route path="/context" element={ <ThemeProvider> <MyContext/></ThemeProvider>}/>
             <Route path="/updateState" element={ <><CorrectWayToUpdateState/><GiftCardState/><GoalsState/></>}/>
             <Route path="/useEffect" element={<><MyUseEffect/><UseEffectWithFetch/></>}/>
+            <Route path="/customHooks" element={<UseCustomHooks/>}/>
         </Routes>
     </>
 }
