@@ -8,6 +8,7 @@ import { CorrectWayToUpdateState } from "./Componenets/CorrectWayToUpdateState";
 import { GiftCardState } from "./Componenets/GiftCardState";
 import { GoalsState } from "./Componenets/GoalsState";
 import { MyUseEffect } from "./Componenets/MyUseEffect";
+import { UseEffectWithFetch } from "./Componenets/UseEffectWithFetch";
 
 
 const AdvanceReactHome = () =>
@@ -28,7 +29,7 @@ const AdvanceReactHome = () =>
             <Route path="/controlledComps" element={<ControlledComps/>}/>
             <Route path="/context" element={ <ThemeProvider> <MyContext/></ThemeProvider>}/>
             <Route path="/updateState" element={ <><CorrectWayToUpdateState/><GiftCardState/><GoalsState/></>}/>
-            <Route path="/useEffect" element={<MyUseEffect/>}/>
+            <Route path="/useEffect" element={<><MyUseEffect/><UseEffectWithFetch/></>}/>
         </Routes>
     </>
 }
