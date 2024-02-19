@@ -1,10 +1,13 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { ReactBasicsHome } from "./ReactBasics/ReactBasicsHome";
 import { AdvanceReactHome } from "./AdvancedReact/AdvanceReactHome";
 import { HomePage } from "./HomePage";
 
 function App() {
+
+  const navigate = useNavigate();
+
   return (
     <div>
         <nav>
@@ -17,6 +20,7 @@ function App() {
           <Route path="/basics/*" element={ <ReactBasicsHome/> }/>
           <Route path="/advanced/*" element={ <AdvanceReactHome/> }/>
         </Routes>
+        {/* <button onClick={ () => navigate("/basics")}> Go to Basics</button> */}
     </div>
   );
 }
