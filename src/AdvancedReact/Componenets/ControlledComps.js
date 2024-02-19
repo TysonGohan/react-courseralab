@@ -84,7 +84,7 @@ const ControlledComps = () =>
                 <label htmlFor="score"> Score : {score} </label>
                 <input type="range" value={score} onChange={e=>setScore(e.target.value)} id="score" min="1" max="10"/>
                 <textarea value={comment} onChange={e=>setComment(e.target.value)}/>
-                <button type="submit">Submit Feedback !</button>
+                <button id="feedbackButton" disabled={score <5 && comment.length < 10 } type="submit">Submit Feedback !</button>
             </fieldset>
         </form>
 
